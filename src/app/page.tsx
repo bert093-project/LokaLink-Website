@@ -1,4 +1,6 @@
+import { Android } from '@/components/ui/android';
 import { Geist, Inter } from 'next/font/google';
+import Image from 'next/image';
 
 const geistLight = Geist({
   subsets: ['latin'],
@@ -42,6 +44,9 @@ export default function Home() {
         </div>
       </div>
 
+      <div className='relative'>
+        <Android className='w-[400px] h-[700px]' src=''/>
+      </div>
       {/* News */}
       <div className={`text-[40px] ${geist.className}`}>
         <p className='ml-10'>News</p>
