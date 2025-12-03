@@ -1,6 +1,7 @@
 import { Android } from '@/components/ui/android';
 import { Geist, Inter } from 'next/font/google';
 import Image from 'next/image';
+import AnimePicture from '../img/testing.jpg';
 
 const geistLight = Geist({
   subsets: ['latin'],
@@ -34,19 +35,81 @@ export default function Home() {
           <h1 className={`text-[24px] ${inter.className}`}>LokaLink™</h1>
           <p className={`text-[24px] ${inter.className}`}>A+100</p>
         </nav>
-        <div className={`flex-col text-center justify-center h-[90%] translate-y-[25%] ${geistSemibold.className}`}>
+        <div className={`flex-col text-center h-[90%] translate-y-[25%] ${geistSemibold.className}`}>
           <p className={`text-[128px] ${geistSemibold.className}`}>LokaLink</p>
           <p className={`text-[24px] text-[#757575] ${geist.className}`}>Find local product easily without having to</p>
           <p className={`text-[24px] text-[#757575] pb-15 ${geist.className}`}>search high and low.</p>
-          <button className={`bg-black py-2 px-4 rounded-full text-[24px] text-white cursor-pointer ${geist.className}`}>
+          <button className={`bg-black py-4 px-6 rounded-full text-[24px] text-white cursor-pointer ${geist.className}`}>
             Download now!
           </button>
+        </div>
+      </div>
+
+      <div className='mt-30'>
+        <div className={`flex justify-center text-[128px] ${geistSemibold.className}`}>
+          <p>Our Team</p>
+        </div>
+        <div className='grid grid-cols-2 mt-20 justify-items-center gap-10'>
+
+          {/* 01 */}
+          <div className='flex flex-col'>
+            <Image
+              src={AnimePicture}
+              width='400'
+              height='400'
+              alt='Syahril Image'
+            />
+            <p className={`text-[28px] ${geist.className}`}>Syahril</p>
+            <p className={`text-[20px] ${geistLight.className}`}>Frontend, Desktop & Mobile Dev + Designer.</p>
+            <p className={`text-[18px] text-gray-600 ${geist.className}`}>"If not you, who else?"</p>
+          </div>
+
+          {/* 02 */}
+          <div className='flex flex-col'>
+            <Image
+              src={AnimePicture}
+              width='400'
+              height='400'
+              alt='Syahrul Image'
+            />
+            <p className={`text-[28px] ${geist.className}`}>Syahrul</p>
+            <p className={`text-[20px] ${geistLight.className}`}>Designer type shit</p>
+            <p className={`text-[18px] text-gray-600 ${geist.className}`}>"no?"</p>
+          </div>
+
+          {/* 03 */}
+          <div className='flex flex-col'>
+            {/* <p>Syahril</p> */}
+            <Image
+              src={AnimePicture}
+              width='400'
+              height='400'
+              alt='Afriza Image'
+            />
+            <p className={`text-[28px] ${geist.className}`}>Afriza</p>
+            <p className={`text-[20px] ${geistLight.className}`}>Software Engineer</p>
+            <p className={`text-[18px] text-gray-600 ${geist.className}`}>"testing"</p>
+          </div>
+
+          {/* 04 */}
+          <div className='flex flex-col'>
+            <Image
+              src={AnimePicture}
+              width='400'
+              height='400'
+              alt='Nelly Image'
+            />
+            <p className={`text-[28px] ${geist.className}`}>Nelly</p>
+            <p className={`text-[20px] ${geistLight.className}`}>test</p>
+            <p className={`text-[18px] text-gray-600 ${geist.className}`}>"test"</p>
+          </div>
         </div>
       </div>
 
       <div className='relative'>
         <Android className='w-[400px] h-[700px]' src=''/>
       </div>
+
       {/* News */}
       <div className={`text-[40px] ${geist.className}`}>
         <p className='ml-10'>News</p>
@@ -64,8 +127,22 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
-        <h1>Who we are!</h1>
+      {/* FOOTER */}
+      <hr className='border-black border w-full mt-100'/>
+      <div className='flex justify-between m-10'>
+        <h1 className={`text-[280px] ${geistSemibold.className}`}>LK.</h1>
+        <div className={`flex flex-col gap-4 translate-y-[25%] ${geist.className}`}>
+          <p className='text-[#757575] cursor-pointer'>INDEX</p>
+          <p className='cursor-pointer'>ABOUT</p>
+          <p className='cursor-pointer'>PRIVACY</p>
+        </div>
+        <div className={`flex flex-col gap-4 translate-y-[25%] ${geist.className}`}>
+          <p className='cursor-pointer'>YOUTUBE</p>
+          <p className='cursor-pointer'>TWITTER</p>
+          <p className='cursor-pointer'>FACEBOOK</p>
+          <p className='cursor-pointer'>INSTAGRAM</p>
+          <p className='cursor-pointer'>EMAIL</p>
+        </div>
       </div>
 
     </main>
