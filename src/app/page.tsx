@@ -28,13 +28,14 @@ const inter = Inter({
 export default function Home() {
   return (
     <main>
-      <div className='relative h-[650px] w-full overflow-hidden'>
+      <div className='relative h-[650px] w-full'>
         <nav className='flex justify-between m-5'>
-          <h1 className={`text-[24px] ${inter.className}`}>LokaLink™</h1>
+          <a href="/" className={`text-[24px] ${inter.className}`}>LocaLink™</a>
+          <a href="/pagesanimation">A+100</a>
           <p className={`text-[24px] ${inter.className}`}>A+100</p>
         </nav>
         <div className={`flex-col text-center h-[90%] translate-y-[25%] ${geistSemibold.className}`}>
-          <p className={`text-[128px] ${geistSemibold.className}`}>LokaLink</p>
+          <p className={`text-[128px] ${geistSemibold.className}`}>LocaLink</p>
           <p className={`text-[24px] text-[#757575] ${geist.className}`}>Find local product easily without having to</p>
           <p className={`text-[24px] text-[#757575] pb-15 ${geist.className}`}>search high and low.</p>
           <button className={`bg-black py-4 px-6 rounded-full text-[24px] text-white cursor-pointer ${geist.className}`}>
@@ -43,10 +44,9 @@ export default function Home() {
         </div>
       </div>
 
-
-      <div className='relative'>
+      {/* <div className='relative'>
         <Android className='w-[400px] h-[700px]' src=''/>
-      </div>
+      </div> */}
 
       {/* News */}
       <div className={`text-[40px] ${geist.className}`}>
@@ -70,19 +70,19 @@ export default function Home() {
       <div className='flex justify-between m-10'>
         <h1 className={`text-[280px] ${geistSemibold.className}`}>LK.</h1>
         <div className={`flex flex-col gap-4 translate-y-[25%] ${geist.className}`}>
-          <p className='text-[#757575] cursor-pointer'>INDEX</p>
-          <p className='cursor-pointer'>ABOUT</p>
+          <a href="/" className='text-[#999595] cursor-pointer'>INDEX</a>
+          <a href="/aboutus">ABOUT US</a>
           <p className='cursor-pointer'>PRIVACY</p>
         </div>
         <div className={`flex flex-col gap-4 translate-y-[25%] ${geist.className}`}>
-          <p className='cursor-pointer'>YOUTUBE</p>
-          <p className='cursor-pointer'>TWITTER</p>
-          <p className='cursor-pointer'>FACEBOOK</p>
-          <p className='cursor-pointer'>INSTAGRAM</p>
-          <p className='cursor-pointer'>EMAIL</p>
+          <a href="https://www.youtube.com/@localinkid" target='_blank'>YOUTUBE</a>
+          <a href="https://x.com/LocaLinkID?s=09" target='_blank'>TWITTER</a>
+          <a href="https://www.facebook.com/profile.php?id=61584705024466&sk=about" target='_blank'>FACEBOOK</a>
+          <a href="https://www.instagram.com/localink2025/" target='_blank'>INSTAGRAM</a>
+          <a href="https://linktr.ee/LocaLinkID" target='_blank'>LINKTREE</a>
+          <a href="#" target='_blank'>EMAIL</a>
         </div>
       </div>
-
     </main>
   );
 }
