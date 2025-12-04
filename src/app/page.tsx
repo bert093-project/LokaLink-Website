@@ -1,7 +1,5 @@
 import { Android } from '@/components/ui/android';
 import { Geist, Inter } from 'next/font/google';
-import Image from 'next/image';
-import AnimePicture from '../img/testing.jpg';
 
 const geistLight = Geist({
   subsets: ['latin'],
@@ -45,66 +43,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='mt-30'>
-        <div className={`flex justify-center text-[128px] ${geistSemibold.className}`}>
-          <p>Our Team</p>
-        </div>
-        <div className='grid grid-cols-2 mt-20 justify-items-center gap-10'>
-
-          {/* 01 */}
-          <div className='flex flex-col'>
-            <Image
-              src={AnimePicture}
-              width='400'
-              height='400'
-              alt='Syahril Image'
-            />
-            <p className={`text-[28px] ${geist.className}`}>Syahril</p>
-            <p className={`text-[20px] ${geistLight.className}`}>Frontend, Desktop & Mobile Dev + Designer.</p>
-            <p className={`text-[18px] text-gray-600 ${geist.className}`}>"If not you, who else?"</p>
-          </div>
-
-          {/* 02 */}
-          <div className='flex flex-col'>
-            <Image
-              src={AnimePicture}
-              width='400'
-              height='400'
-              alt='Syahrul Image'
-            />
-            <p className={`text-[28px] ${geist.className}`}>Syahrul</p>
-            <p className={`text-[20px] ${geistLight.className}`}>Designer type shit</p>
-            <p className={`text-[18px] text-gray-600 ${geist.className}`}>"no?"</p>
-          </div>
-
-          {/* 03 */}
-          <div className='flex flex-col'>
-            {/* <p>Syahril</p> */}
-            <Image
-              src={AnimePicture}
-              width='400'
-              height='400'
-              alt='Afriza Image'
-            />
-            <p className={`text-[28px] ${geist.className}`}>Afriza</p>
-            <p className={`text-[20px] ${geistLight.className}`}>Software Engineer</p>
-            <p className={`text-[18px] text-gray-600 ${geist.className}`}>"testing"</p>
-          </div>
-
-          {/* 04 */}
-          <div className='flex flex-col'>
-            <Image
-              src={AnimePicture}
-              width='400'
-              height='400'
-              alt='Nelly Image'
-            />
-            <p className={`text-[28px] ${geist.className}`}>Nelly</p>
-            <p className={`text-[20px] ${geistLight.className}`}>test</p>
-            <p className={`text-[18px] text-gray-600 ${geist.className}`}>"test"</p>
-          </div>
-        </div>
-      </div>
 
       <div className='relative'>
         <Android className='w-[400px] h-[700px]' src=''/>

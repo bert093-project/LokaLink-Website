@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ReactLenis } from '@/app/utils/lenis';
+import { ReactLenis } from '../utils/lenis';
 
 export const metadata: Metadata = {
   title: "LokaLink",
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ReactLenis options={{ duration: 1.7}} root>
-      <body>{children}</body>
+      <body className='overflow-hidden'>{children}</body>
       </ReactLenis>
     </html>
   );
