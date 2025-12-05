@@ -2,25 +2,19 @@
 import { Geist, Inter } from 'next/font/google';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { useRef } from 'react';
 
 const geistLight = Geist({
   subsets: ['latin'],
   display: 'swap',
-  weight: '300' // light
+  weight: '300'
 });
 
 const geist = Geist({
   subsets: ['latin'],
   display: 'swap',
-  weight: '400' // normal
+  weight: '400'
 });
 
-const geistSemibold = Geist({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: '600', // Semibold
-});
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,8 +22,11 @@ const inter = Inter({
   weight: '400'
 });
 
-const myCustomEase = gsap.parseEase("cubic-bezier(0.68, -0.6, 0.32, 1.6)"); 
-const myCustomEnd = gsap.parseEase("cubic-bezier(0.65, 0, 0.35, 1");
+const geistSemibold = Geist({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '600'
+});
 
 export default function Home() {
   useGSAP(() => {
@@ -37,6 +34,7 @@ export default function Home() {
     tl.to("#homeanimate", { y: "+=90vh" })
     .to("#homeanimate", { y: "0"});
   });
+
   return (
     <main>
       <div id='homeanimate' className='bg-black h-full text-[300px] text-black'>

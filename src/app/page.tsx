@@ -1,28 +1,28 @@
-'use client';
 import { Geist, Inter } from 'next/font/google';
 
 const geistLight = Geist({
   subsets: ['latin'],
   display: 'swap',
-  weight: '300' // light
+  weight: '300'
 });
 
 const geist = Geist({
   subsets: ['latin'],
   display: 'swap',
-  weight: '400' // normal
+  weight: '400'
 });
 
-const geistSemibold = Geist({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: '600', // Semibold
-});
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   weight: '400'
+});
+
+const geistSemibold = Geist({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '600'
 });
 
 export default function Home() {

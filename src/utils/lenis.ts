@@ -1,2 +1,2 @@
-'use clients'
+'use client'
 export * from 'lenis/react'
