@@ -1,4 +1,4 @@
-import { Android } from '@/components/ui/android';
+'use client';
 import { Geist, Inter } from 'next/font/google';
 
 const geistLight = Geist({
@@ -31,7 +31,6 @@ export default function Home() {
       <div className='relative h-[650px] w-full'>
         <nav className='flex justify-between m-5'>
           <a href="/" className={`text-[24px] ${inter.className}`}>LocaLink™</a>
-          <a href="/pagesanimation">A+100</a>
           <p className={`text-[24px] ${inter.className}`}>A+100</p>
         </nav>
         <div className={`flex-col text-center h-[90%] translate-y-[25%] ${geistSemibold.className}`}>
@@ -44,12 +43,33 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className='relative'>
-        <Android className='w-[400px] h-[700px]' src=''/>
-      </div> */}
+      <div className={`text-[128px] text-center mt-[10%] ${geistSemibold.className}`}>
+        <h1>Main Features</h1>
+      </div>
+
+      <div className='ml-[4%] mt-[5%] mockup-phone w-[368px] h-[720px]'>
+        <div className='mockup-phone-camera'></div>
+        <div className='mockup-phone-display'>
+          <img src="https://raw.githubusercontent.com/bert093/Image-Repository/refs/heads/main/onboardingsceren1.webp" alt="Features 1"/>
+        </div>
+      </div>
+
+      <div className='ml-[5%] mockup-phone w-[368px] h-[720px]'>
+        <div className='mockup-phone-camera'></div>
+        <div className='mockup-phone-display'>
+          <img src="https://raw.githubusercontent.com/bert093/Image-Repository/refs/heads/main/onboardingscreen2.webp" alt="Features 1"/>
+        </div>
+      </div>
+
+      <div className='ml-[5%] mockup-phone w-[368px] h-[720px]'>
+        <div className='mockup-phone-camera'></div>
+        <div className='mockup-phone-display'>
+          <img src="https://raw.githubusercontent.com/bert093/Image-Repository/refs/heads/main/onboardingscreen3.webp" alt="Features 1"/>
+        </div>
+      </div>
 
       {/* News */}
-      <div className={`text-[40px] ${geist.className}`}>
+      <div className={`mt-[15%] text-[40px] ${geist.className}`}>
         <p className='ml-10'>News</p>
         <hr className='border-black border w-[90%] mt-10'/>
         <div className={`flex justify-between ml-[3%] w-[86%] text-[24px] mt-20 mb-24 ${geist.className}`}>
@@ -69,6 +89,9 @@ export default function Home() {
       <hr className='border-black border w-full mt-100'/>
       <div className='flex justify-between m-10'>
         <h1 className={`text-[280px] ${geistSemibold.className}`}>LK.</h1>
+        <div className={`flex flex-col gap-4 translate-y-[25%] ${geist.className}`}>
+          <a href="/pagesanimation">DEV + TESTING</a>
+        </div>
         <div className={`flex flex-col gap-4 translate-y-[25%] ${geist.className}`}>
           <a href="/" className='text-[#999595] cursor-pointer'>INDEX</a>
           <a href="/aboutus">ABOUT US</a>
