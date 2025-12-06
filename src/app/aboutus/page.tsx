@@ -1,6 +1,9 @@
 import { Geist, Inter } from 'next/font/google';
 import Image from 'next/image';
-import AnimePicture from '../img/testing.jpg';
+import Syahril from '../img/ourteam/Syahril.webp';
+import Syahrul from '../img/ourteam/Syahrul.webp';
+import Afriza from '../img/ourteam/Afriza.webp';
+import Nelly from '../img/ourteam/Nelly.webp';
 
 const geistLight = Geist({
   subsets: ['latin'],
@@ -32,7 +35,7 @@ export default function Home() {
     <main>
       <div>
         <nav className={`flex justify-between m-5 text-[24px] ${inter.className}`}>
-          <a href="/">LocaLink™</a>
+          <a href="/">LocaLink©</a>
           <p>A+100</p>
         </nav>
         <div className={`flex justify-center text-[128px] ${geistSemibold.className}`}>
@@ -43,20 +46,20 @@ export default function Home() {
           {/* 01 */}
           <div className='flex flex-col'>
             <Image
-              src={AnimePicture}
+              src={Syahril}
               width='400'
               height='400'
               alt='Syahril Image'
             />
             <p className={`text-[28px] ${geist.className}`}>Syahril</p>
-            <p className={`text-[20px] ${geistLight.className}`}>Frontend, Desktop & Mobile Dev + Designer.</p>
+            <p className={`text-[20px] ${geistLight.className}`}>Web, Desktop, & Mobile Dev + Designer.</p>
             <p className={`text-[18px] text-gray-600 ${geist.className}`}>"If not you, who else?"</p>
           </div>
 
           {/* 02 */}
           <div className='flex flex-col'>
             <Image
-              src={AnimePicture}
+              src={Syahrul}
               width='400'
               height='400'
               alt='Syahrul Image'
@@ -70,7 +73,7 @@ export default function Home() {
           <div className='flex flex-col'>
             {/* <p>Syahril</p> */}
             <Image
-              src={AnimePicture}
+              src={Afriza}
               width='400'
               height='400'
               alt='Afriza Image'
@@ -83,7 +86,7 @@ export default function Home() {
           {/* 04 */}
           <div className='flex flex-col'>
             <Image
-              src={AnimePicture}
+              src={Nelly}
               width='400'
               height='400'
               alt='Nelly Image'
