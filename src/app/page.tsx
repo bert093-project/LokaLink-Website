@@ -30,7 +30,7 @@ export default function Home() {
     <main>
       <div className='relative h-[650px] w-full'>
         <nav className='flex justify-between m-5'>
-          <a href="/" className={`text-[24px] ${inter.className}`}>LocaLink™</a>
+          <a href="/" className={`text-[24px] ${inter.className}`}>LocaLink©</a>
           <p className={`text-[24px] ${inter.className}`}>A+100</p>
         </nav>
         <div className={`flex-col text-center h-[90%] translate-y-[25%] ${geistSemibold.className}`}>
@@ -72,16 +72,16 @@ export default function Home() {
       <div className={`mt-[15%] text-[40px] ${geist.className}`}>
         <p className='ml-10'>News</p>
         <hr className='border-black border w-[90%] mt-10'/>
-        <div className={`flex justify-between ml-[3%] w-[86%] text-[24px] mt-20 mb-24 ${geist.className}`}>
+        <div className={`grid grid-cols-3 ml-[3%] w-[86%] text-[24px] mt-20 mb-24 ${geist.className}`}>
           <p>Auth</p>
-          <p>2025.12.2</p>
+          <p className='pl-[9%]'>2025.12.7</p>
           <p>Fix login issue on google</p>
         </div>
         <hr className='border-black border w-[90%]'/>
-        <div className={`flex justify-between ml-[3%] mt-20 w-[86%] text-[24px] ${geist.className}`}>
-          <p>test</p>
-          <p className='ml-93'>2025.11.2</p>
-          <p className='ml-94'>Fix Onboarding and Sign in page always open if app start</p>
+        <div className={`grid grid-cols-3 ml-[3%] w-[86%] text-[24px] mt-20 mb-24 ${geist.className}`}>
+          <p>Refactor</p>
+          <p className='pl-[9%]'>2025.12.1</p>
+          <p>Update main.dart to use compile time secret</p>
         </div>
       </div>
 
