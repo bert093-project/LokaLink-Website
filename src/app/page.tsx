@@ -37,7 +37,7 @@ export default function Home() {
           <p className={`text-[128px] ${geistSemibold.className}`}>LocaLink</p>
           <p className={`text-[24px] text-[#757575] ${geist.className}`}>Find local product easily without having to</p>
           <p className={`text-[24px] text-[#757575] pb-15 ${geist.className}`}>search high and low.</p>
-          <a href="https://drive.usercontent.google.com/download?id=1_9qZBzDnZ4fZ15oz2vFIoAiJ45ea50ht&export=download&authuser=0" target='_blank'>
+          <a href="https://www.dropbox.com/scl/fi/rrjz6yjnmgwtn4e27wgpw/v1.0.2-beta1.apk?rlkey=fsgdg2dltcw7dngggnth6s2gm&st=c36qltrp&dl=1" target='_blank'>
             <button className={`bg-black py-4 px-6 rounded-full text-[24px] text-white cursor-pointer ${geist.className}`}>
               Download now!
             </button>
