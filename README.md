@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+<h1>LocaLink</h1>
+</div>
 
-## Getting Started
+## What Is This?
+A minimalist web app built with Next.js, React, Tailwind CSS and DaisyUI
 
-First, run the development server:
+## Requirements
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Make sure you have the following installed on your system:
+
+```
+Git (2.51.2 or newer)
+Bun (1.3.5 or newer)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How To Run This Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone Repo
 
-## Learn More
+```
+git clone https://github.com/bert093-project/ProjectUAS-Data-Mining.git
+cd ProjectUAS-Data-Mining
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install package/dependency:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+bun install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Run the development server:
 
-## Deploy on Vercel
+```
+bun run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Folder Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+LokaLink-Website
+├─ src
+│  ├─ app
+│  │  ├─ aboutus
+│  │  │  └─ page.tsx
+│  │  ├─ globals.css
+│  │  ├─ img
+│  │  │  └─ ourteam
+│  │  │     ├─ Afriza.webp
+│  │  │     ├─ Nelly.webp
+│  │  │     ├─ Syahril.webp
+│  │  │     └─ Syahrul.webp
+│  │  ├─ layout.tsx
+│  │  ├─ page.tsx
+│  │  └─ pagesanimation
+│  │     └─ page.tsx
+│  └─ utils
+│     └─ lenis.ts
+├─ gitattributes.lock
+├─ gitignore.lock
+├─ bun.lock
+├─ components.json
+├─ eslint.config.mjs
+├─ next.config.ts
+├─ package.json
+├─ postcss.config.mjs
+├─ README.md
+└─ tsconfig.json
+```
