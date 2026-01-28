@@ -20,7 +20,7 @@ Bun (1.3.5 or newer)
 
 ```
 git clone https://github.com/bert093-project/ProjectUAS-Data-Mining.git
-cd ProjectUAS-Data-Mining
+cd LokaLink-Website
 ```
 
 2. Install package/dependency:
